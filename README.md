@@ -3,6 +3,8 @@
 
 > A collection of brand approved colours for use across Sky.com
 
+See http://skyglobal.github.io/colours/ for a demo of the Colours
+
 ## Usage
 
 ### Complete toolkit from a CDN
@@ -21,13 +23,3 @@ Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
 BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
 [Read More >](CONTRIBUTING.md)
-
-## Building Locally
-
- * `gulp serve` : serves the project on port 3456
- 
-## Releasing (admin only)
-
- * `grunt release:bower` : release the code to bower
- * `grunt release:gh-pages` : push the latest version to gh-pages
-

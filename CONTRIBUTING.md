@@ -36,3 +36,8 @@ If you would like the feature to go live sooner, mention this in the comments/co
 
 ## Running Locally
  * `gulp serve` :  Run Jekyll on port 3456
+ 
+## Releasing (admin only)
+
+ * `grunt release:bower` : release the code to bower
+ * `grunt release:gh-pages` : push the latest version to gh-pages
