@@ -29,7 +29,7 @@ To build the toolkit locally, you'll need to install:
 `git pull upstream master`
 6. If necessary, rebase your commits into logical chunks, without errors.
 7. Push the branch up 
-`git push origin my-awesome-feature`
+`git push origin feature-my-feature`
 8. Create a pull request and describe what your change does and the why you think it should be merged.
 
 If you would like the feature to go live sooner, mention this in the comments/commit. We will provide a temporary live url that will allow you to carry on without getting blocked.
@@ -39,5 +39,5 @@ If you would like the feature to go live sooner, mention this in the comments/co
  
 ## Releasing (admin only)
 
- * `grunt release:bower` : release the code to bower
- * `grunt release:gh-pages` : push the latest version to gh-pages
+ * `gulp release:bower` : release the code to bower
+ * `gulp release:gh-pages` : push the latest version to gh-pages
