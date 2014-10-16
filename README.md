@@ -20,9 +20,14 @@ Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
 
 BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
+[Read More >](CONTRIBUTING.md)
+
 ## Building Locally
 
  * `gulp serve` : serves the project on port 3456
- * `gulp release:bower` : release the code to bower
- * `gulp release:gh-pages` : push the latest version to gh-pages
+ 
+## Releasing (admin only)
+
+ * `grunt release:bower` : release the code to bower
+ * `grunt release:gh-pages` : push the latest version to gh-pages
 
