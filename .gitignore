@@ -1,0 +1,7 @@
+.idea/
+.sass-cache/
+.tmp/
+_site/
+node_modules/
+dist/
+npm-debug.log

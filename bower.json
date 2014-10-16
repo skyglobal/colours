@@ -1,0 +1,14 @@
+{
+  "name": "bskyb-colours",
+  "version": "0.0.6",
+  "homepage": "https://github.com/skyglobal/colours",
+  "authors": [
+    "Peter Mouland <peter.mouland@gmail.com>"
+  ],
+  "description": "A collection of brand approved colours for use across Sky.com",
+  "license": "MIT",
+  "ignore": [
+    "**/*",
+    "!scss/**/*"
+  ]
+}
