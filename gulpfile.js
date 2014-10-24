@@ -2,24 +2,18 @@
 
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
-var compass = require('gulp-compass');
-var prefix = require('gulp-autoprefixer');
-var childProcess = require('child_process');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var runSequence = require('run-sequence');
 var deploy = require("gulp-gh-pages");
+var bower = require('gulp-bower');
 var run = require("gulp-run");
 var pkg = require('./package.json');
+var concat = require('gulp-concat');
 
 var paths= {
-    "deploy-remote": "origin",
-    "deploy-branch": "gh-pages",
-    "imagesSrc": "_images",
-    "assets": "_site/assets",
-    "jekyll": [
-        "**/*.html",
-        "**/*.md",
-        "!_site/**/*.html",
-        "!node_modules/**/*"
+    "site": [
+        "demo/**/*.html"
     ],
     sass: 'demo/scss',
     css: '_site/css'
@@ -29,14 +23,11 @@ var paths= {
 gulp.task('sass', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
     return gulp.src(paths.sass + '/*.scss')
-        .pipe(compass({
-            config_file: 'config.rb',
-            css: paths.css,
-            sass: paths.sass,
-            bundle_exec: true,
-            time: true
+        .pipe(sass({
+            includePaths: ['scss','bower_components'],
+            outputStyle: 'compressed'
         }))
-        .pipe(prefix("last 2 versions", "> 1%"))
+        .pipe(autoprefixer())
         .pipe(gulp.dest(paths.css))
         .pipe(browserSync.reload({stream:true}));
 });
@@ -44,6 +35,7 @@ gulp.task('sass', function() {
 
 gulp.task('browserSync', function() {
     browserSync({
+        port: 3456,
         server: {
             baseDir: "_site"
         }
@@ -53,25 +45,19 @@ gulp.task('browserSync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(paths.jekyll, ['jekyll-rebuild']);
+    gulp.watch(paths.jekyll, ['build']);
     gulp.watch(paths.sass + '/**/*.scss', ['sass']);
 });
 
 
-
-gulp.task('jekyll-build', function (done) {
-    return childProcess.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
-        .on('close', done);
-});
-
-gulp.task('jekyll-rebuild', function() {
-    return runSequence(['jekyll-build', 'sass'], function () {
-        browserSync.reload();
-    });
+gulp.task('create-site', function() {
+    gulp.src(['demo/index.html','demo/_includes/*.html'])
+        .pipe(concat('index.html'))
+        .pipe(gulp.dest('_site'))
 });
 
 gulp.task('build', function(cb) {
-    return runSequence('jekyll-build',['sass'],
+    return runSequence(['create-site','bower'],['sass'],
         cb
     );
 });
@@ -84,12 +70,8 @@ gulp.task('gh-pages', function () {
         })).pipe(gulp.dest('/tmp/gh-pages'));
 });
 
-gulp.task('deploy', function(cb) {
-    return runSequence(
-        'build',
-        'gh-pages',
-        cb
-    );
+gulp.task('bower', function() {
+    return bower()
 });
 
 gulp.task('run-release-bower', function(cb) {
@@ -100,8 +82,7 @@ gulp.task('run-release-bower', function(cb) {
 
 gulp.task('serve', function(callback) {
     return runSequence(
-        'jekyll-build',
-        ['sass'],
+        'build',
         ['browserSync', 'watch'],
         callback
     );
