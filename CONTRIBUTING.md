@@ -7,11 +7,8 @@ We encourage small change pull requests, the smaller the change the quicker and 
 ## Dependencies
 
 To build the toolkit locally, you'll need to install:
- * [ruby](https://www.ruby-lang.org/) (version 1.9.3 or later),
  * [node.js](http://nodejs.org),
  * [Gulp](http://gulpjs.com),
- * [Bundler](http://bundler.io)
- * [Jekyll](http://jekyllrb.com/)
 
 
 ## Workflow
@@ -39,5 +36,7 @@ If you would like the feature to go live sooner, mention this in the comments/co
  
 ## Releasing (admin only)
 
+ * Update [package.json](package.json) version number appropriately
  * `gulp release:bower` : release the code to bower
  * `gulp release:gh-pages` : push the latest version to gh-pages
+ * `gulp release:cdn` : push the latest version to Akamai
