@@ -7,14 +7,7 @@ See http://skyglobal.github.io/colours/ for a demo of the Colours
 
 ## Usage
 
-### Complete toolkit from a CDN
-
-The easiest way to use web toolkit is to refer to the compiled, cached JS and CSS combined with the rest of the toolkit directly from your page.
-
-Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
-
-
-### Included as a SASS module in your own application
+### As a SASS module
 
 `bower install --save-dev bskyb-colours`
 
