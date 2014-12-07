@@ -6,6 +6,7 @@
     "Peter Mouland <peter.mouland@gmail.com>"
   ],
   "description": "A collection of brand approved colours for use across Sky.com",
+  "main": "dist/scss/colours.scss",
   "license": "MIT",
   "ignore": [
     "**/*",
