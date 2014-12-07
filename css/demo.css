@@ -1,176 +1,81 @@
-/* line 3, ../../demo/scss/demo.scss */
-.demo {
-  margin-bottom: 40px;
-  clear: both;
-}
+/* Common demo Sass here */
+.demo-updated {
+  display: block;
+  font-size: 0.3em; }
 
-/* line 7, ../../demo/scss/demo.scss */
-.example {
-  clear: both;
-}
+.demo-block {
+  display: block;
+  clear: both; }
 
-/* line 10, ../../demo/scss/demo.scss */
-.white {
-  color: white;
-}
-
-/* line 13, ../../demo/scss/demo.scss */
-.cushioned {
-  padding: 12%;
-}
-
-/* line 17, ../../demo/scss/demo.scss */
 .demo-colour-block {
   float: left;
   width: 150px;
-  margin-right: 3.15789%;
-}
-/* line 22, ../../demo/scss/demo.scss */
-.demo-colour-block .cushioned {
-  display: block;
-  height: 100px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-/* line 30, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-1 {
-  background-color: #0076be;
-}
-/* line 33, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-atlantic {
-  background-color: #003663;
-}
-/* line 36, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-arts {
-  background-color: #734993;
-}
-/* line 39, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-living {
-  background-color: #87a0af;
-}
-/* line 42, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-movies {
-  background-color: #a51d4d;
-}
-/* line 46, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-v3-red {
-  background-color: #ed1c24;
-}
-/* line 49, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-v3-pink {
-  background-color: #ed0677;
-}
-/* line 52, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-v3-yellow {
-  background-color: #fdb913;
-}
-/* line 55, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-v3-green {
-  background-color: #a6ce39;
-}
-/* line 58, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-v3-blue {
-  background-color: #00aeef;
-}
-/* line 62, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sports {
-  background-color: #d92027;
-}
-/* line 65, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-original {
-  background-color: #f05423;
-}
-/* line 68, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-variety {
-  background-color: #7d9d33;
-}
-/* line 71, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-family {
-  background-color: #2b93d1;
-}
-/* line 74, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-movies {
-  background-color: #b11d55;
-}
-/* line 78, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-primary {
-  color: #333333;
-}
-/* line 81, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-secondary {
-  color: #666666;
-}
-/* line 84, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-inactive {
-  color: #999999;
-}
-/* line 87, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-error {
-  color: #D21717;
-}
-/* line 90, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-link {
-  color: #0070a5;
-}
-/* line 94, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-primary-button {
-  background-color: #0073c5;
-}
-/* line 97, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-secondary-button {
-  background-color: #eaeaea;
-}
-/* line 100, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-success-icon {
-  background-color: #6dbb00;
-}
-/* line 103, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-sky-go {
-  background-color: #44ad3a;
-}
-/* line 106, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-remote-record {
-  background-color: #ed1c24;
-}
-/* line 109, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-never-miss {
-  background-color: #0077ae;
-}
-/* line 113, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-background-dark {
-  background-color: #eaeaea;
-}
-/* line 116, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-background-light {
-  background-color: #f4f4f4;
-}
-/* line 119, ../../demo/scss/demo.scss */
-.demo-colour-block .demo-key-line {
-  background-color: #dcdcdc;
-}
-/* line 123, ../../demo/scss/demo.scss */
-.demo-colour-block small {
-  display: block;
-}
+  margin-right: 3.15789%; }
+  .demo-colour-block .cushioned {
+    display: block;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 12%; }
+  .demo-colour-block .demo-sky-1 {
+    background-color: #0076be; }
+  .demo-colour-block .demo-sky-atlantic {
+    background-color: #003663; }
+  .demo-colour-block .demo-sky-arts {
+    background-color: #734993; }
+  .demo-colour-block .demo-sky-living {
+    background-color: #87a0af; }
+  .demo-colour-block .demo-sky-movies {
+    background-color: #a51d4d; }
+  .demo-colour-block .demo-v3-red {
+    background-color: #ed1c24; }
+  .demo-colour-block .demo-v3-pink {
+    background-color: #ed0677; }
+  .demo-colour-block .demo-v3-yellow {
+    background-color: #fdb913; }
+  .demo-colour-block .demo-v3-green {
+    background-color: #a6ce39; }
+  .demo-colour-block .demo-v3-blue {
+    background-color: #00aeef; }
+  .demo-colour-block .demo-sports {
+    background-color: #d92027; }
+  .demo-colour-block .demo-original {
+    background-color: #f05423; }
+  .demo-colour-block .demo-variety {
+    background-color: #7d9d33; }
+  .demo-colour-block .demo-family {
+    background-color: #2b93d1; }
+  .demo-colour-block .demo-movies {
+    background-color: #b11d55; }
+  .demo-colour-block .demo-primary {
+    color: #333333; }
+  .demo-colour-block .demo-secondary {
+    color: #666666; }
+  .demo-colour-block .demo-inactive {
+    color: #999999; }
+  .demo-colour-block .demo-error {
+    color: #D21717; }
+  .demo-colour-block .demo-link {
+    color: #0070a5; }
+  .demo-colour-block .demo-primary-button {
+    background-color: #0073c5; }
+  .demo-colour-block .demo-secondary-button {
+    background-color: #eaeaea; }
+  .demo-colour-block .demo-success-icon {
+    background-color: #6dbb00; }
+  .demo-colour-block .demo-sky-go {
+    background-color: #44ad3a; }
+  .demo-colour-block .demo-remote-record {
+    background-color: #ed1c24; }
+  .demo-colour-block .demo-never-miss {
+    background-color: #0077ae; }
+  .demo-colour-block .demo-background-dark {
+    background-color: #eaeaea; }
+  .demo-colour-block .demo-background-light {
+    background-color: #f4f4f4; }
+  .demo-colour-block .demo-key-line {
+    background-color: #dcdcdc; }
 
-/* line 128, ../../demo/scss/demo.scss */
 .demo-hex {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-/* line 132, ../../demo/scss/demo.scss */
-.mobile-size {
-  color: #5cacb6;
-}
-
-/* line 135, ../../demo/scss/demo.scss */
-.inactive .mobile-size {
-  color: #A9C7CA;
-}
-
-/* line 138, ../../demo/scss/demo.scss */
-.demo-pink {
-  color: #ed0677;
-}
+  margin-bottom: 10px; }
