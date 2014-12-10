@@ -13,6 +13,6 @@
     "!dist/**/*"
   ],
   "devDependencies": {
-    "bskyb-typography": "~0.0.1"
+    "bskyb-typography": "~0.0.4"
   }
 }
