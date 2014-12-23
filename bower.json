@@ -7,7 +7,7 @@
   ],
   "description": "A collection of brand approved colours for use across Sky.com",
   "main": "src/scss/colours.scss",
-  "license": "MIT",
+  "license": "BSD3",
   "ignore": [
     "**/*",
     "!dist/**/*",
