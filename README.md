@@ -3,6 +3,8 @@
 
 > A collection of brand approved colours for use across Sky.com
 
+** DEPRECATED : Please use [core](https://github.com/skyglobal/core) https://github.com/skyglobal/core **
+
 See http://skyglobal.github.io/colours/ for a demo of the Colours
 
 ## Usage
